@@ -1,0 +1,12 @@
+- name: ping to server
+  hosts: hari
+  tasks: 
+  - name: installing nginx package
+    ansible.builtin.package:
+      name: nginx
+      state: present
+  - name: running nginx
+    ansible.builtin.service:
+      name: nginx
+      service: started
+
