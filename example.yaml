@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # In ansible everything is a line and it starts with "-"
 - Name: hari krishna
   DOB: 25071998
@@ -12,7 +10,7 @@
    Distic: mahabubabad
   Gmail: hariananthagiri123@gmail.com   
 
- # to give multipule list of addresses we give as below
+ # to give multipule list of addresses we give as below 
 
  - Name: hari krishna
    DOB: 25071998
