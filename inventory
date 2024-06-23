@@ -4,6 +4,10 @@
 [node]
 54.173.75.120
 
-[instances]
+[web]
+34.207.128.36
+54.210.176.243
+
+[roboshop]
 server
 node
