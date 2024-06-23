@@ -1,0 +1,5 @@
+- name: ping a playbook
+  hosts: web
+  tasks: 
+  - name: ping the server
+    ansibile.builtin.ping:
