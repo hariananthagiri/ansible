@@ -1,6 +1,6 @@
 - name: ping to server
   hosts: hari
-  become: yes
+  become: yes   # it will give root access
   tasks: 
   - name: installing nginx package
     ansible.builtin.package:
