@@ -1,35 +1,35 @@
 #!/bin/bash
 
 # In ansible everything is a line and it starts with "-"
--Name: hari krishna
- DOB: 25071998
- Address: 
+- Name: hari krishna
+  DOB: 25071998
+  Address: 
    HN: c-74/3-255
    Coloney: dasharadhi coloney
    Landmark: near police station
    Village: chinnagudur
    Mandal: chinnagudur
    Distic: mahabubabad
- Gmail: hariananthagiri123@gmail.com   
+  Gmail: hariananthagiri123@gmail.com   
 
  # to give multipule list of addresses we give as below
 
- -Name: hari krishna
-  DOB: 25071998
-  Address: 
-  -adressline1: 
-   HN: c-74/3-255
-   Coloney: dasharadhi coloney
-   Landmark: near police station
-   Village: chinnagudur
-   Mandal: chinnagudur
-   Distic: mahabubabad
-  -adressline2: 
-   HN: 1433
-   Coloney: sai priya nagar
-   Landmark: near fashion wood works
-   Village: medipally
-   Mandal: medchal-malkajgiri
-   Distic: rangareddy
-  Gmail: hariananthagiri123@gmail.com      
+ - Name: hari krishna
+   DOB: 25071998
+   Address: 
+   - adressline1: 
+     HN: c-74/3-255
+     Coloney: dasharadhi coloney
+     Landmark: near police station
+     Village: chinnagudur
+     Mandal: chinnagudur
+     Distic: mahabubabad
+   - adressline2: 
+     HN: 1433
+     Coloney: sai priya nagar
+     Landmark: near fashion wood works
+     Village: medipally
+     Mandal: medchal-malkajgiri
+     Distic: rangareddy
+   Gmail: hariananthagiri123@gmail.com      
               
