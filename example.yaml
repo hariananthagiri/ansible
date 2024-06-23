@@ -15,8 +15,8 @@
  # to give multipule list of addresses we give as below
 
  -Name: hari krishna
- DOB: 25071998
- Address: 
+  DOB: 25071998
+  Address: 
   -adressline1: 
    HN: c-74/3-255
    Coloney: dasharadhi coloney
@@ -31,5 +31,5 @@
    Village: medipally
    Mandal: medchal-malkajgiri
    Distic: rangareddy
- Gmail: hariananthagiri123@gmail.com   
+  Gmail: hariananthagiri123@gmail.com      
               
