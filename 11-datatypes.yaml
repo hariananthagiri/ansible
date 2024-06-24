@@ -1,0 +1,33 @@
+- name: describeing about datatypes...
+  hosts: localhost
+  tasks:
+  vars:
+    NAME: "HARI KRISHNA"     # KEY VALUE...
+    SKILLS:                  # LIST TYPE....
+    - AWS
+    - DEVOPS
+    - LINUX
+    - SHELL
+    - ANSIBLE
+    EXPERIENCE:                # MAP TYPE IT CONTAINS KEY VALUE PAIRS...
+    AWS: 4
+    DEVOPS: 2
+    LINUX: 2
+    SHELL: 1
+    ANSIBLE: 3
+    STUDENT: true               # boolean type.....
+  tasks:
+  - name: printing key values
+    ansible.builtin.debug:
+      msg: "NAME: {{NAME}}"
+  - name: printing  list values
+    ansible.builtin.debug:
+      msg: "SKILLS: {{SKILLS}}"
+  - name: printing mapping values
+    ansible.builtin.debug:
+      msg: "EXPERIENCE: {{EXPERIENCE}}"
+  - name: printing boolean values
+    ansible.builtin.debug:
+      msg: "STUDENT: {{STUDENT}}"
+
+
