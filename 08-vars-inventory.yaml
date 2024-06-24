@@ -1,7 +1,7 @@
-- name: using variable from play level
+- name: using variable from inventory
   hosts: localhost
   tasks:
-  - name: printing variable values at play level
+  - name: printing variable values from inventory
     ansible.builtin.debug:
       msg: "hii iam {{NAME}}, learning {{COURSE}}"
 
