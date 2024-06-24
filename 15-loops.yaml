@@ -1,7 +1,7 @@
-- name: using loops
+- name: loops
   hosts: localhost
   become: yes
-  tasks:
+  tasks:  
   - name: installing or uninstalling  packages..
     ansible.builtin.package:
       name: "{{item.name}}"   # item is a default keyword for loops we cant change name..
