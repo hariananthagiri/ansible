@@ -1,0 +1,11 @@
+- name: using variable from play level
+  hosts: localhost
+  vars_files:
+  - vars.yaml
+  tasks:
+  - name: printing variable values at play level
+    ansible.builtin.debug:
+      msg: "hii iam {{NAME}}, learning {{COURSE}}"
+
+# we are not declereing variables here in program we alrady declered values in a file (i.e vars.yaml)
+# now we are supplying values to variables from that file in play level as a LIST using "-"
