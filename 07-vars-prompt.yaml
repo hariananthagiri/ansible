@@ -1,0 +1,16 @@
+- name: using variable prompt
+  hosts: localhost
+  vars_prompt:
+  - name : USERNAME
+    prompt: "enter username"
+    private: false
+  - name : PASSWORD
+    prompt: "enter password"
+    private: true
+  tasks:
+  - name: prompting the values securely in variable
+    ansible.builtin.debug:
+      msg: "username is: {{USERNAME}}, password is: {{PASSWORD}}"
+
+# we are not declereing variables here in program we alrady declered values in a file (i.e vars.yaml)
+# now we are supplying values to variables from that file in play level as a LIST using "-"
