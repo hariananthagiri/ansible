@@ -6,8 +6,8 @@
   tasks:
   - name: printing variable values at task level
     vars:
-    NAME: "shiva krishna"
-    COURSE: "linux and shell"
+      NAME: "shiva krishna"
+      COURSE: "linux and shell"
     ansible.builtin.debug:
       msg: "hii iam {{NAME}}, learning {{COURSE}}"
 
