@@ -1,0 +1,15 @@
+- name: using loops
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: installing packages..
+    ansible.builtin.package:
+      name: "{{item.name}}"   # item is a default keyword for loops we cant change name..
+      state: "{{item.state}}
+    loop:
+    - {name: 'git', state: 'present'}
+    - {name: 'mysql', state: 'absent'}
+    - {name: 'ansible', state: 'present'}
+    - {name: 'postfix', state: 'absent'}
+
+
