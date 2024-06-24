@@ -8,3 +8,4 @@
     ansible.builtin.debug:
       msg: "hii iam {{NAME}}, learning {{COURSE}}"
 
+# play level variable declereing at play level and using anywhere in task level....
