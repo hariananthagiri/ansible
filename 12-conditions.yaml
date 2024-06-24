@@ -3,7 +3,8 @@
   tasks:
   - name: check roboshop user is available or not
     ansible.builtin.command: id roboshop
-    register: user                             # user is a variable stores the output of above command (i.e id roboshop)
+    register: user    # user is a variable stores the output of above command (i.e id roboshop)
+    ignore_errors: true    # ansible will not exit even we got error it will ignore the error continue executeing next step
   - name: print the value of variable register
     ansible.builtin.debug:
       msg: "user output is {{user}}"
