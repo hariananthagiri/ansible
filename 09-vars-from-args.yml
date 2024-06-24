@@ -1,5 +1,6 @@
 - name: using variable from command line
   hosts: localhost
+  tasks:
   - name: printing variable values at command line
     ansible.builtin.debug:
       msg: "hii iam {{PERSON}}, learning {{TOOL}}"
