@@ -1,0 +1,10 @@
+- name: using variable from play level
+  hosts: localhost
+  tasks:
+  - name: printing variable values at play level
+    ansible.builtin.debug:
+      msg: "hii iam {{NAME}}, learning {{COURSE}}"
+
+# we can give variable values from a inventory
+# in inventory file we are giveing variable values not mentioning in program
+# in the syntax directly it is takeing inventory file in -i <file-name>

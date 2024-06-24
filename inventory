@@ -3,6 +3,12 @@
 44.173.75.120
 54.173.75.345
 
+[localhost]
+localhost
+[localhost:vars]
+NAME="HARI KRISHNA"
+COURSE="AWS AND DEVOPS"
+
 [orders]
 54.173.75.188
 54.173.75.132
