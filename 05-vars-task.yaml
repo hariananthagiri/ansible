@@ -1,13 +1,13 @@
-- name: using variable from play level
+- name: using variable from task level
   hosts: localhost
   vars:
     NAME: "hari krishna"
     COURSE: "aws and devops"
   tasks:
-  - name: printing variable values at play level
+  - name: printing variable values at task level
     vars:
     NAME: "shiva krishna"
-    COURSE: "aws and devops"
+    COURSE: "linux and shell"
     ansible.builtin.debug:
       msg: "hii iam {{NAME}}, learning {{COURSE}}"
 
