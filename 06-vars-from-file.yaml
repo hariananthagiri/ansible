@@ -1,9 +1,9 @@
-- name: using variable from play level
+- name: using variable values from a file
   hosts: localhost
   vars_files:
   - vars.yaml
   tasks:
-  - name: printing variable values at play level
+  - name: printing variable values from a file
     ansible.builtin.debug:
       msg: "hii iam {{NAME}}, learning {{COURSE}}"
 
