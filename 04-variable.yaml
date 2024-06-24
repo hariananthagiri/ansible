@@ -1,0 +1,10 @@
+- name: using variable from play level
+  hosts: localhost
+  vars:
+    NAME: "hari krishna"
+    COURSE: "aws and devops"
+  tasks:
+  - name: printing variable values at play level
+    ansible.builtin.debug:
+      msg: "hii iam {{NAME}}, learning {{COURSE}}"
+
