@@ -8,3 +8,6 @@
   - name: print the value of variable register
     ansible.builtin.debug:
       msg: "user output is {{user}}"
+  - name: print the value of return code
+    ansible.builtin.debug:
+      msg: "status is: {{user.rc}}"
