@@ -1,5 +1,5 @@
 - name: using play-1
-  hosts: selfhost
+  hosts: localhost
   tasks:
   - name: play-1 and task-1
     ansible.builtin.debug:
@@ -8,12 +8,12 @@
 
 
 - name: using play-2
-  hosts: selfhost
+  hosts: localhost
   tasks:
   - name: play-2 and task-2
     ansible.builtin.debug:
       msg: "we are using play-2 and task-2"
 
 
-      
+
 
