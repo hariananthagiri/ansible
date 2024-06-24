@@ -1,7 +1,8 @@
-- name: using variable from play level
+- name: using variable from command line
   hosts: localhost
-  - name: printing variable values at play level
+  - name: printing variable values at command line
     ansible.builtin.debug:
       msg: "hii iam {{PERSON}}, learning {{TOOL}}"
 
-# giveing varible values from command line arguments -e variable_name="value"
+# giveing varible values from command line arguments -e "variable_name=value"
+# -e "PERSON=HARI KRISHNA" -e "TOOL=AWS"
