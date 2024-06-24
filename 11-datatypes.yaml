@@ -10,11 +10,11 @@
     - SHELL
     - ANSIBLE
     EXPERIENCE:                # MAP TYPE IT CONTAINS KEY VALUE PAIRS...
-    AWS: 4
-    DEVOPS: 2
-    LINUX: 2
-    SHELL: 1
-    ANSIBLE: 3
+      AWS: 4
+      DEVOPS: 2
+      LINUX: 2
+      SHELL: 1
+      ANSIBLE: 3
     STUDENT: true               # boolean type.....
   tasks:
   - name: printing key values
