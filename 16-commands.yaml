@@ -39,6 +39,8 @@
     ansible.builtin.copy: # copying a file by using copy module
       src: /home/centos/hari.copy
       dest: /home/centos/user1d  # giveing particular location to create the file
+
+      # some commands like get_url,replace,unarchive are there
   
 
       
