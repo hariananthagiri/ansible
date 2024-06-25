@@ -30,7 +30,7 @@
     ansible.builtin.file: # createing directory by using file module
       name: hari.file1
       path: /home/centos/ansible  # giveing particular location to create the directory
-      state: file  # we have multipule options here directory - to create/absent - to uninstall
+      state: present # we have multipule options here directory - to create/absent - to uninstall
       
   
   
