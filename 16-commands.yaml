@@ -33,6 +33,6 @@
       state: touch  # we have multipule options here directory/touch/absent
   - name: copying a file
     ansible.builtin.copy: # copying a file by using copy module
-      src: hari.copy
+      src: /home/centos/hari.copy
       dest: /home/centos/user1d  # giveing particular location to create the file
       
