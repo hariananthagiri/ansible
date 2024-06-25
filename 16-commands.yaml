@@ -16,7 +16,7 @@
       name: user
       state: present  
   - name: using command module  
-    ansible.builtin.command: echo "hari krishna"
+    ansible.builtin.command: ls /home/centos/ansible
       register: NAME
   - name: printing the given in variable NAME # using debug 
     ansible.builtin.debug:
