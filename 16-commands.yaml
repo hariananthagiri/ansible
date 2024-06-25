@@ -24,12 +24,12 @@
   - name: createing a directory
     ansible.builtin.file: # createing directory by using file module
       name: user1d
-      state: directory  # we have multipule options here directory - to create/absent - to uninstall
       path: /home/centos/ansible  # giveing particular location to create the directory
+      state: directory  # we have multipule options here directory/touch
   - name: createing a file
-    ansible.builtin.file: # createing directory by using file module
+    ansible.builtin.file: # createing a file by using file module
       name: hari.file1
-      path: /home/centos/ansible    # giveing particular location to create the directory
+      path: /home/centos/ansible    # giveing particular location to create the file
       state: touch  # we have multipule options here directory/touch
       
   
