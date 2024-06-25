@@ -28,11 +28,11 @@
       state: directory  # we have multipule options here directory/touch/absent
   - name: createing a file
     ansible.builtin.file: # createing a file by using file module
-      name: hari.file2
+      name: hari.copy
       path: /home/centos/ansible    # giveing particular location to create the file
       state: touch  # we have multipule options here directory/touch/absent
   - name: copying a file
     ansible.builtin.copy: # copying a file by using copy module
-      src: hari.file1
-      dest: /home/centos/ansible/hari.file3   # giveing particular location to create the file
+      src: hari.copy
+      dest: /home/centos/user1d  # giveing particular location to create the file
       
