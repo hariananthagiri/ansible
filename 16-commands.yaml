@@ -1,5 +1,6 @@
 - name: using ansible modules
   hosts: localhost
+  become: yes   # for root user
   tasks: 
   - name: installing nginix  # installing packages we use pakage module
     ansible.builtin.package:
