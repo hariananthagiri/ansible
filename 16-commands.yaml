@@ -8,7 +8,7 @@
       state: present  # present to install absent to uninstall
   - name: installing nginix  # using  service module
     ansible.builtin.service:
-      name: service
+      name:  nginx
       state: started      # started/stoped/restarted/reloded
       enabled: yes        # enabled yes/no 
   - name: printing the given messege # using debug 
