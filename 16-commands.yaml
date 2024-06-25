@@ -4,7 +4,7 @@
   tasks: 
   - name: installing nginix  # installing packages we use pakage module
     ansible.builtin.package:
-      name: nginix
+      name: nginx
       state: present
   - name: printing the given messege # using debug 
     ansible.builtin.debug:
