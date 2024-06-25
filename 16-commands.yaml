@@ -5,7 +5,12 @@
   - name: installing nginix  # installing packages we use pakage module
     ansible.builtin.package:
       name: nginx
-      state: present
+      state: present  # present to install absent to uninstall
+  - name: installing nginix  # using  service module
+    ansible.builtin.service:
+      name: service
+      state: started      # started/stoped/restarted/reloded
+      enabled: yes        # enabled yes/no 
   - name: printing the given messege # using debug 
     ansible.builtin.debug:
       msg: "iam using debug module for printing"
