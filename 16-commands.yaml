@@ -16,11 +16,11 @@
       name: user
       state: present  
   - name: using command module  
-    ansible.builtin.command: ls /home/centos/ansible
-      register: NAME
-  - name: printing the given in variable NAME # using debug 
+    ansible.builtin.command: echo "HARI KRISHNA"
+    register:  NAME
+  - name: printing the value of cammand in given variable NAME # using debug 
     ansible.builtin.debug:
-      msg: "printing value of NAME IS: {{NAME}}"
+      msg: "printing value of NAME:{{NAME}}"
   
   
   
