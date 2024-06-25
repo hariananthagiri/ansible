@@ -14,3 +14,8 @@
   - name: printing the given messege # using debug 
     ansible.builtin.debug:
       msg: "iam using debug module for printing"
+  - name: installing nginix  # installing packages we use pakage module
+    ansible.builtin.user: # createing user by using user module
+      name: user
+      state: present  
+  
