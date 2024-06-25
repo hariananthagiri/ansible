@@ -17,10 +17,17 @@
       state: present  
   - name: using command module  
     ansible.builtin.command: echo "HARI KRISHNA"
-    register:  NAME
-  - name: printing the value of cammand in given variable NAME # using debug 
+    register:  NAME   # register will give the command value to variable now variable will store the command output...
+  - name: printing the value of cammand in given variable NAME # using debug.. 
     ansible.builtin.debug:
-      msg: "printing value of NAME:{{NAME}}"
+      msg: "printing value of NAME:{{NAME}}"  # declereing the variable here to see the value stored in the variable as output...
+  - name: createing a directory
+    ansible.builtin.file: # createing directory by using file module
+      name: user1d
+      state: directory 
+  
+
+
   
   
   
