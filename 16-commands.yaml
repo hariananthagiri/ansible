@@ -1,0 +1,6 @@
+- name: using ansible modules
+  hosts: localhost
+  tasks: 
+  - name: printing the given messege # using debug 
+    ansible.builtin.debug:
+      msg: "iam using debug module for printing"
