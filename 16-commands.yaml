@@ -11,11 +11,16 @@
       name:  nginx
       state: started      # started/stoped/restarted/reloded
       enabled: yes        # enabled yes/no 
-  - name: printing the given messege # using debug 
-    ansible.builtin.debug:
-      msg: "iam using debug module for printing"
-  - name: installing nginix  # installing packages we use pakage module
+  - name: createing user with name user
     ansible.builtin.user: # createing user by using user module
       name: user
       state: present  
+  - name: using command module  
+    ansible.builtin.command: echo "hari krishna"
+      register: NAME
+  - name: printing the given in variable NAME # using debug 
+    ansible.builtin.debug:
+      msg: "printing value of NAME IS: {{NAME}}"
+  
+  
   
