@@ -24,7 +24,9 @@
   - name: createing a directory
     ansible.builtin.file: # createing directory by using file module
       name: user1d
-      state: directory 
+      state: directory  # we have multipule options here directory - to create/absent - to uninstall
+      path: /home/centos/ansible  # giveing particular location to create the directory
+
   
 
 
