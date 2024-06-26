@@ -42,8 +42,13 @@
   - name: using a url link and installing package
     ansible.builtin.get_url: # installing a package by using get_url module
       url: https://roboshop-builds.s3.amazonaws.com/web.zip
-      dest: /app  # giveing particular location to install package using url
-   
+      dest: /tmp  # giveing particular location to install package using url
+  - name: unziping a zipped file 
+    ansible.builtin.unarchive: # unziping a zipped folder using unarchive module
+      src: /tmp/web.zip
+      dest: app  # giveing particular location to create the file
+      remote_src: yes
+ 
 
  
 
