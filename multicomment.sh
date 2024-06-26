@@ -1,11 +1,11 @@
 #!/bin/bash
 
 : <<'END_COMMENT'
-  - name: allowing remote acess
-  ansible.builtin.replace: # giveing remote access by using replace module
-  path: <destination>
-  regexp: '<ip-address>'
-  replace: '0.0.0.0'  # allowing all trafic
+This script prints a
+welcome message
+END_COMMENT
 
-  END_COMMENT
-echo "using multi comments"
+echo 'Welcome to Bash scripting!'
+
+# Output:
+# Welcome to Bash scripting!
