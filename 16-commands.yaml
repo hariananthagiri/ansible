@@ -27,8 +27,8 @@
       msg: "printing value of NAME:{{NAME}}"  # declereing the variable here to see the value stored in the variable as output...
   - name: createing a directory
     ansible.builtin.file: # createing directory by using file module
-      name: user1d
-      path: /home/centos/ansible  # giveing particular location to create the directory
+      name: app
+      path: /  # giveing particular location to create the directory
       state: directory  # we have multipule options here directory/touch/absent
   - name: createing a file
     ansible.builtin.file: # createing a file by using file module
@@ -43,6 +43,13 @@
     ansible.builtin.get_url: # installing a package by using get_url module
       url: https://roboshop-builds.s3.amazonaws.com/web.zip
       dest: /tmp  # giveing particular location to install package using url
+   - name: unziping a zipped file 
+    ansible.builtin.unarchive: # unziping a zipped folder using unarchive module
+      src: /tmp/web.zip
+      dest: /app  # giveing particular location to create the file
+      remote_src: yes
+
+
  
 
       # some commands like get_url,replace,unarchive are there
