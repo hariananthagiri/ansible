@@ -27,8 +27,8 @@
       msg: "printing value of NAME:{{NAME}}"  # declereing the variable here to see the value stored in the variable as output...
   - name: createing a directory
     ansible.builtin.file: # createing directory by using file module
-      name: app
-      path: /  # giveing particular location to create the directory
+      #name: app
+      path: /app  # giveing particular location to create the directory
       state: directory  # we have multipule options here directory/touch/absent
   - name: createing a file
     ansible.builtin.file: # createing a file by using file module
