@@ -41,7 +41,7 @@
       dest: /home/centos/user1d  # giveing particular location to create the file
   - name: using a url link and installing package
     ansible.builtin.get_url: # installing a package by using get_url module
-      url: curl -o /tmp/web.zip https://roboshop-builds.s3.amazonaws.com/web.zip
+      url: https://roboshop-builds.s3.amazonaws.com/web.zip
       dest: /tmp  # giveing particular location to install package using url
  
 
