@@ -1,0 +1,11 @@
+- name: using ansible modules
+  hosts: localhost
+  become: yes   # for root user
+  tasks: 
+  - name: allowing remote acess
+  ansible.builtin.replace: # giveing remote access by using replace module
+  path: <destination>
+  regexp: '<ip-address>'
+  replace: '0.0.0.0'  # allowing all trafic
+
+  
