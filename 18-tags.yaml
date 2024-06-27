@@ -1,0 +1,23 @@
+- name: using tags
+  hosts: localhost
+  tasks:
+  - name: hari tasks
+    ansible.builtin.debug:
+      msg: printing only hari tasks
+    tags:
+    - hari
+  - name: shiva tasks
+    ansible.builtin.debug:
+      msg: printing only shiva tasks
+    tags:
+    - shiva
+  - name: mahesh tasks
+    ansible.builtin.debug:
+      msg: printing only mahesh tasks
+    tags:
+    - mahesh
+  - name: manu tasks
+    ansible.builtin.debug:
+      msg: printing only manu tasks
+    tags:
+    - manu

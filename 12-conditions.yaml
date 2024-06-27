@@ -15,4 +15,4 @@
   - name: create user
     ansible.builtin.user:
       name: roboshop
-    when: user.rc != 0    # condition 
+    when: user.rc != 0    # condition for best practice use double quotes for values "0" while using when command.
