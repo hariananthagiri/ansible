@@ -7,5 +7,13 @@
   path: <destination>
   regexp: '<ip-address>'
   replace: '0.0.0.0'  # allowing all trafic
+- name: connecting to other server from remote server
+  hosts: mangodb  # ping to the mangodb server
+  become: yes   # for root user
+  tasks: 
+  - name: ping to other server
+  ansible.builtin.ping: # connecting to the other server using ping module
+  
+
 
   
