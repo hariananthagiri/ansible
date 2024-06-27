@@ -1,0 +1,8 @@
+- name: using ansible vault
+  hosts: localhost
+  tasks: 
+  - name: passing values through vault
+    ansible.builtin.debug:
+      msg: using ansible vault for passing user_name and password
+      
+
